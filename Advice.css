@@ -1,0 +1,64 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #0b0e13;
+}
+.container{
+    box-sizing: border-box;
+    background-color: rgba(47, 45, 57, 0.911);
+    width: min(420px, 100%);
+   
+    border-radius: 20px;
+    align-items: center;
+    display: grid;
+    justify-content: center;
+  
+    padding: 24px;
+    
+}
+p{
+    justify-content: center;
+    text-align: center;
+    color: aliceblue;
+    font-size: 20px;
+}
+h3{
+    text-align: center;
+    color: rgb(11, 242, 14);
+}
+button{
+    background-color: rgb(79, 236, 68);
+    transform: translateY(30px);
+    border-radius: 50%;
+    width: fit-content;
+    border-color: rgb(3, 192, 53);
+margin-left: 170px;
+box-shadow: 0px 0px 20px #52ffa5;
+
+
+}
+#time{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+  #icon{
+    width: 20px;
+    height: 20px;
+    transition: transform 0.5s ease-in-out;
+  }
+  #icon:hover{
+    transform: rotate(120deg);
+  }
+  #icon.spinning{
+    animation: spin 0.8s linear infinite;
+  }
+  @keyframes spin{
+    to{
+      transform: rotate(360deg);
+    }
+  }
